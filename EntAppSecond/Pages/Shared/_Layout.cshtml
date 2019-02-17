@@ -5,21 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - EntAppSecond</title>
 
-
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 
 
 </head>
 <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                 
+                </button>
+                <a class="navbar-brand" href="/Index">Lu's Site</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li ><a href="/Index">Home</a></li>                 
+                    <li><a href="/FormWS">Form</a></li>
+                    <li><a href="/About">About</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
 
-    <div class="container body-content">
-        @RenderBody()
+    <div class="container body-content">        
+        @RenderBody()       
         <hr />
+    </div>
+    <div class="container">
         <footer>
-            <p>&copy; 2019 - Una's Great Site</p>
+            <p>&copy; @DateTime.Now - Lu's Super mega ukulele</p>
         </footer>
     </div>
+    
 
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
