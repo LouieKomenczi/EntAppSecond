@@ -1,0 +1,38 @@
+﻿@page
+@model EntAppSecond.Pages.Students.CreateModel
+@{
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <link href="~/css/student.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <form method="post">
+        <div asp-validation-summary="All"></div>
+        <div>
+            <label asp-for=Student.FirstName></label>
+            <input asp-for=Student.FirstName />
+        </div>
+
+        <div>
+            <label asp-for=Student.LastName></label>
+            <input asp-for=Student.LastName />
+        </div>
+
+        <div>
+            <label asp-for=Student.StudentID></label>
+            <input asp-for=Student.StudentID />
+            <span asp-validation-for="Student.StudentID"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register Student</button>
+    </form>
+</body>
+</html>
