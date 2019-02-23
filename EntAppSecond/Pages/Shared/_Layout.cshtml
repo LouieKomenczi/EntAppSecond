@@ -17,7 +17,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                 
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/Index">Lu's Site</a>
             </div>
@@ -28,13 +28,13 @@
                     <li><a href="/FormWS">Form</a></li>
                     <li><a href="/About">About</a></li>
                 </ul>
-                
+
             </div>
         </div>
     </nav>
 
-    <div class="container body-content">        
-        @RenderBody()       
+    <div class="container body-content">
+        @RenderBody()
         <hr />
     </div>
     <div class="container">
@@ -42,15 +42,17 @@
             <p>&copy; @DateTime.Now - Super mega ukulele</p>
         </footer>
     </div>
-    
+
 
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+
 
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
 </body>
