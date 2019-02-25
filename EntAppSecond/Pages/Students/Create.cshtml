@@ -1,20 +1,9 @@
 ﻿@page
-@model EntAppSecond.Pages.Students.CreateModel
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@{
-    ViewData["Title"] = "Create";
+@model CreateModel
+@{    
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-
-    <link href="~/css/student.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
-</head>
-<body>
     <form method="post">
         <div asp-validation-summary="All"></div>
         <div>
@@ -65,5 +54,4 @@
 
         <button type="submit" class="btn btn-primary">Register Student</button>
     </form>
-</body>
-</html>
+
