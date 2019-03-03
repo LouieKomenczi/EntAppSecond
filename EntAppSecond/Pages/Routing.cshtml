@@ -1,0 +1,25 @@
+﻿@page "{message?}"
+@model EntAppSecond.Pages.RoutingModel
+@{
+    ViewData["Title"] = "Routing";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+@if (RouteData.Values["message"] != null)
+{
+    @RouteData.Values["message"]
+}
+else
+{
+    <h2>Routing page, no message </h2>
+}
+<br />
+<h2>Follows routing from the get method</h2>
+<p>@Model.Mess</p>
+
+<br />
+<h2>Routing with Binding property</h2>
+<p>@Model.Message</p>
+
+
